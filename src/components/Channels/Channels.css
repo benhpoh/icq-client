@@ -1,0 +1,34 @@
+.channel-container {
+  display: grid;
+}
+.channel-new {
+  padding: 20px 10px 10px 10px;
+  border-bottom: 1px solid rgb(80, 80, 80);
+}
+.channel-new-input {
+  display: block;
+  width: 100%;
+  min-width: 200px;
+  margin-bottom: 10px;
+}
+.channel-new-button {
+  text-decoration: none;
+  padding: 5px;
+  margin: 10px 0;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  display: block;
+  width: 100%;
+  background-color: rgb(50, 173, 50);
+  background: linear-gradient(180deg, rgb(50, 173, 50) 70%, rgb(40, 143, 40) 90%, rgb(30, 113, 30) 100%);
+  box-shadow: 0 2px 5px grey;
+}
+.channel-active-channels-panel {
+  padding: 10px;
+}
+.channel-active-channels-panel > h3 {
+  margin: 10px 0;
+}

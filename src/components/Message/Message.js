@@ -11,12 +11,14 @@ export default function Message({name, message}) {
     messageByCurrentUser
     ? (
       <div className="message-wrapper message-wrapper-sent">
-        <p className="message-text">You: {message.text}</p>
+        <p className="message-text">You ({message.user}): <br/>
+        {message.text}</p>
       </div>
     )
     : (
       <div className="message-wrapper message-wrapper-received">
-        <p className="message-text">{message.user}: {message.text}</p>
+        <p className="message-text">{message.user}: <br/>
+        {message.text}</p>
       </div>
     )
   )

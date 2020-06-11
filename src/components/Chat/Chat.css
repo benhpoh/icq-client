@@ -1,0 +1,35 @@
+.chat-container {
+  position: relative;
+  background-color: #fff;
+  height: 50vh;
+  width: 50vh;
+  border: 2px solid rgb(43, 105, 219);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(20, 20, 20, 0.5);
+}
+.chat-container header {
+  display: flex;
+  padding: 5px;
+  background-color: rgb(43, 105, 219);
+  background: linear-gradient(180deg, rgb(43,105,219) 70%, rgb(58,114,218) 80%, rgb(117, 151, 214) 100%);
+  border-radius: 5px 5px 0 0;
+}
+.chat-container img {
+  height: 20px;
+}
+.chat-container-title {
+  margin: 0 10px;
+  color: #fff;
+  font-weight: 400;
+}
+.chat-container main {
+  height: calc(50vh - 30px - 70px);
+  overflow-y: scroll;
+  padding-left: 10px;
+}
+.chat-container footer {
+  position: absolute;
+  height: 45px;
+  width: 100%;
+  bottom: 10px;
+}

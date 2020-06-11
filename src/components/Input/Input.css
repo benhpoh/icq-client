@@ -1,0 +1,27 @@
+.input-form {
+  display: grid;
+  width: 100%;
+  border-top: 1px solid rgb(80,80,80);
+  padding: 10px;
+  grid-template-columns: 4fr 1fr;
+  gap: 10px;
+}
+.input-form > input {
+  background: none;
+  height: 100%;
+  border: none;
+}
+.input-send {
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  display: block;
+  width: 100%;
+  background-color: rgb(50, 173, 50);
+  background: linear-gradient(180deg, rgb(50, 173, 50) 70%, rgb(40, 143, 40) 90%, rgb(30, 113, 30) 100%);
+  box-shadow: 0 2px 5px grey;
+}

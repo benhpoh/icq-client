@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+#root {
+  background-image: url("./images/desktop.png");
+  background-color: black;
+  width: 100vw;
+  height: calc(100vw / 1920 * 950);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px;
+}
+.app-layout {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  gap: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.icq-main {
+  background-color: #fff;
+  height: calc(80vw / 1920 * 950);
+  border: 2px solid rgb(43, 105, 219);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(20, 20, 20, 0.5);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.icq-main header{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 5px;
+  background-color: rgb(43, 105, 219);
+  background: linear-gradient(180deg, rgb(43,105,219) 70%, rgb(58,114,218) 80%, rgb(117, 151, 214) 100%);
+  border-radius: 5px 5px 0 0;
 }
-
-.App-link {
-  color: #61dafb;
+.icq-main img {
+  height: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icq-title {
+  margin: 0 10px;
+  color: #fff;
+  font-weight: 400;
+}
+.icq-username-panel {
+  padding: 10px;
+  border-bottom: 1px solid rgb(80,80,80);
+}
+.icq-username-panel > * {
+  display: block;
+  width: 100%;
+  min-width: 200px;
+  margin-bottom: 10px;
 }
