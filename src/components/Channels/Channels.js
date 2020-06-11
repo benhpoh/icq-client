@@ -33,6 +33,7 @@ export default class Channels extends React.Component {
         <div className="channel-new">
 
           <input 
+            value={this.state.newChannel}
             type="text" 
             className="channel-new-input"
             onChange={ evt => this.setState({newChannel: evt.target.value.toLowerCase()})} 
