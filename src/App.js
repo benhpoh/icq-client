@@ -26,7 +26,7 @@ function App() {
 
           <div className="icq-username-panel">
             <label className="icq-label">Nickname</label>
-            <input type="text" value={username} onChange={evt => {setUsername(evt.target.value)}} placeholder="anonymousPossum"/>
+            <input type="text" value={username} onChange={evt => {setUsername(evt.target.value.toLowerCase())}} placeholder="anonymousPossum"/>
           </div>
 
           <Channels username={username} endpoint={endpoint}/>

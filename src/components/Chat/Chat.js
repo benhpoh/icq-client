@@ -4,7 +4,7 @@ import io from 'socket.io-client'
 import './Chat.css'
 import Messages from '../Messages/Messages.js'
 import Input from '../Input/Input.js'
-import { withRouter } from "react-router-dom"
+import { Link, withRouter } from "react-router-dom"
 
 import icqMessage from '../../audio/icq-message.wav'
 import icqLogo from '../../images/icq.png'
@@ -83,8 +83,13 @@ class Chat extends React.Component {
       <div>
         <div className="chat-container">
           <header>
-            <img src={icqLogo} alt="logo"/>
-            <h3 className="chat-container-title">{channel.toUpperCase()}</h3>
+            <div className="chat-top-bar">
+              <img src={icqLogo} alt="logo"/>
+              <h3 className="chat-container-title">{channel.toUpperCase()}</h3>
+            </div>
+            <div className="chat-quit">
+              <Link to="/">x</Link>
+            </div>
           </header>
 
           <main>

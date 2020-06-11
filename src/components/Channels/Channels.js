@@ -25,7 +25,7 @@ export default class Channels extends React.Component {
 
   render() {
     const username = this.props.username || "anonymousPossum"
-    const newChannel = this.state.newChannel || "Lobby"
+    const newChannel = this.state.newChannel || "lobby"
 
     return (
       <div className="channel-container">
@@ -35,7 +35,7 @@ export default class Channels extends React.Component {
           <input 
             type="text" 
             className="channel-new-input"
-            onChange={ evt => this.setState({newChannel: evt.target.value})} 
+            onChange={ evt => this.setState({newChannel: evt.target.value.toLowerCase()})} 
             placeholder="Channel name"
           />
 
