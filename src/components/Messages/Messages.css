@@ -1,0 +1,30 @@
+.message-wrapper {
+  display: inline-block;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.message-header {
+  color: rgb(80, 80, 80);
+  margin: 5px;
+  font-size: 12px;
+}
+
+.message-text {
+  margin: 5px;
+}
+
+.message-wrapper-sent {
+  background-color: rgb(50, 173, 50);
+  background: linear-gradient(180deg, rgb(50, 173, 50) 70%, rgb(40, 143, 40) 90%, rgb(30, 113, 30) 100%);
+}
+.message-wrapper-sent .message-text {
+  color: white;
+  font-weight: 400;
+}
+
+.message-wrapper-received {
+  background-color: rgb(230,230,230);
+  background: linear-gradient(180deg, rgb(230,230,230) 70%, rgb(220, 220, 220) 90%, rgb(210, 210, 210) 100%);
+}
