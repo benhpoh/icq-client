@@ -1,6 +1,7 @@
 import React from 'react'
 import io from 'socket.io-client'
 import './Channels.css'
+import {Link} from 'react-router-dom'
 
 var socket
 
@@ -38,7 +39,7 @@ export default class Channels extends React.Component {
             placeholder="Channel name"
           />
 
-          <a href={`/chat/${newChannel}?n=${username}`} className="channel-new-button">Start a new channel</a>
+          <Link to={`/chat/${newChannel}?n=${username}`} className="channel-new-button">Start a new channel</Link>
 
         </div>
 
@@ -53,7 +54,7 @@ export default class Channels extends React.Component {
           {this.state.activeChannels.map((channel, index) => {
             return (
               <div key={index}>
-                <p className="channel-links">+ <a href={`/chat/${channel}?n=${username}`}>{channel}</a></p>
+                <p className="channel-links">+ <Link to={`/chat/${channel}?n=${username}`}>{channel}</Link></p>
               </div>
             )
           })}
