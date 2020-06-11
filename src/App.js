@@ -11,7 +11,7 @@ import Channels from './components/Channels/Channels.js'
 import icqLogo from './images/icq.png'
 
 function App() {
-  let endpoint = "localhost:4000"
+  let endpoint = "http://icq-server.herokuapp.com/"
   const { n: name } = queryString.parse(window.location.search)
   const [username, setUsername] = React.useState(name ||"iSeekYou" + Math.ceil(Math.random()*100))
   return (
