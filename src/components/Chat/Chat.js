@@ -55,27 +55,29 @@ class Chat extends React.Component {
     }
   }
 
-  componentDidUpdate () {
-    this.scrollToBottom()
   }
 
   sendMessage = (evt) => {
     evt.preventDefault()
     const { message } = this.state
-
+    
     if (message) {
       socket.emit('sendMessage', message, () => this.setState({message: ""}))
     }
   }
-
+  
   onChange = (message) => {
     this.setState({message: message})
   }
-
+  
   scrollToBottom = () => {
     this.messagesEnd.scrollIntoView({ behavior: 'smooth' })
   }
   
+  componentDidUpdate () {
+    this.scrollToBottom()
+  }
+
   render() {
     const {message, messages, name, channel} = this.state
     
