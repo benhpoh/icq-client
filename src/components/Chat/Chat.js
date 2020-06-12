@@ -55,7 +55,7 @@ class Chat extends React.Component {
     }
   }
 
-  }
+  
 
   sendMessage = (evt) => {
     evt.preventDefault()
@@ -74,7 +74,7 @@ class Chat extends React.Component {
     this.messagesEnd.scrollIntoView({ behavior: 'smooth' })
   }
   
-  componentDidUpdate () {
+  componentDidUpdate() {
     this.scrollToBottom()
   }
 
@@ -90,7 +90,7 @@ class Chat extends React.Component {
               <h3 className="chat-container-title">{channel.toUpperCase()}</h3>
             </div>
             <div className="chat-quit">
-              <Link to="/">x</Link>
+              <a href="/">x</a>
             </div>
           </header>
 
